@@ -1,0 +1,57 @@
+# Packaging + test configuration for the buddhi kernel.
+#
+# `pip install -e .` (or `pip install -e ".[test]"`) installs the pure-stdlib
+# `buddhi` package from this directory. The `[tool.pytest.ini_options]` table also
+# makes `python -m pytest -q` run the kernel's own unit suite in isolation: pytest
+# treats this directory as its rootdir and never walks up, and `pythonpath = ["."]`
+# puts it on sys.path so `import buddhi` resolves (the package lives at ./buddhi/).
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "buddhikernel"
+version = "0.1.0"
+description = "A composable controller for allocating a bounded cognitive budget across a stream of work."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Manasvi Srivastava" }]
+keywords = [
+    "cognitive-budget",
+    "allocation",
+    "control-plane",
+    "agents",
+    "supervision",
+    "human-in-the-loop",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+# The kernel is pure standard library: no runtime dependencies.
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/buddhikernel/buddhi"
+Repository = "https://github.com/buddhikernel/buddhi"
+Documentation = "https://github.com/buddhikernel/buddhi/tree/main/docs"
+
+[tool.setuptools.packages.find]
+include = ["buddhi*"]
+
+[tool.setuptools.package-data]
+buddhi = ["py.typed"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"

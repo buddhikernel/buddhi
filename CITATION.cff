@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use Buddhi or build on its ideas, please cite it."
+title: "Buddhi: a composable controller for allocating a bounded cognitive budget"
+abstract: >-
+  Buddhi is a runtime-agnostic policy kernel that decides, per item, whether
+  something is worth acting on and how much effort to spend under a bounded
+  cognitive budget, and when to defer to a human. The same controller composes:
+  the supervisor of a stream of streams is the identical operator applied one
+  level up.
+type: software
+authors:
+  - family-names: Srivastava
+    given-names: Manasvi
+    email: hello@buddhikernel.com
+repository-code: "https://github.com/buddhikernel/buddhi"
+url: "https://github.com/buddhikernel/buddhi"
+version: "0.1.0"
+license: Apache-2.0
+keywords:
+  - cognitive budget
+  - allocation
+  - control plane
+  - agent supervision
+  - human-in-the-loop
