@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest an idea or enhancement for Buddhi
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Note that the Buddhi kernel core stays
+        deliberately minimal — domain-specific behavior is expected to enter
+        through the seams the kernel exposes, not by growing the core. Please
+        keep that in mind when proposing changes.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What problem are you trying to solve? What's the use case?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the change or feature you'd like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches you've considered, including doing this outside the kernel core.
+    validations:
+      required: false
+  - type: checkboxes
+    id: scope-acknowledgement
+    attributes:
+      label: Scope acknowledgement
+      options:
+        - label: I understand the kernel core stays minimal and this may belong in an adapter or seam rather than the core.
+          required: false
