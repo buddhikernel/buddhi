@@ -1,5 +1,11 @@
 # Buddhi
 
+[![PyPI version](https://img.shields.io/pypi/v/buddhikernel.svg)](https://pypi.org/project/buddhikernel/)
+[![Python versions](https://img.shields.io/pypi/pyversions/buddhikernel.svg)](https://pypi.org/project/buddhikernel/)
+[![CI](https://github.com/buddhikernel/buddhi/actions/workflows/ci.yml/badge.svg)](https://github.com/buddhikernel/buddhi/actions/workflows/ci.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20509989.svg)](https://doi.org/10.5281/zenodo.20509989)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 Buddhi is a composable controller for allocating a bounded *cognitive budget* (a finite ration of model effort and human interruptions) across a stream of work. It decides, per item, whether the item is worth acting on, how much to spend on it, when to stop, and when to defer to a human, all under one budget.
 
 ## The idea
