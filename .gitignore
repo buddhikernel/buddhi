@@ -2,5 +2,12 @@ __pycache__/
 *.pyc
 .DS_Store
 
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+.pytest_cache/
+
 .claude/
 /CLAUDE.md
