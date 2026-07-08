@@ -1,0 +1,86 @@
+<svg viewBox="0 0 420 1051" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="6.5" refY="3.4" orient="auto"><path d="M0,0 L7,3.4 L0,6.8 Z" fill="#6e7781"/></marker></defs>
+<text x="16" y="34" font-size="19" font-weight="700" fill="#1f2328" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">How the Buddhi</text>
+<text x="16" y="58" font-size="19" font-weight="700" fill="#1f2328" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">controller works</text>
+<text x="16" y="80" font-size="12" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">One controller runs the seven decisions</text>
+<text x="16" y="96" font-size="12" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">over an item, then applies to itself one</text>
+<text x="16" y="112" font-size="12" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">level up — a stream viewed as an item.</text>
+<rect x="16" y="132" width="388" height="30" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="210.0" y="151.5" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Raw input</text>
+<path d="M210.0,162 L210.0,178" fill="none" stroke="#6e7781" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="16" y="178" width="388" height="30" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="210.0" y="197.5" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Stage 0 · condition (one-time pre-pass)</text>
+<path d="M210.0,208 L210.0,224" fill="none" stroke="#6e7781" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="16" y="224" width="388" height="30" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="210.0" y="243.5" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Typed items</text>
+<path d="M210.0,254 L210.0,270" fill="none" stroke="#6e7781" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="16" y="270" width="388" height="150" rx="11" fill="#eef1f4" stroke="#d0d7de" stroke-width="1"/>
+<text x="30" y="294" font-size="13.5" font-weight="700" fill="#1f2328" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Supervisor level</text>
+<text x="30" y="311" font-size="12" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">a stream viewed as an item</text>
+<rect x="30" y="328" width="360" height="32" rx="8" fill="#f6f8fa" stroke="#b6bec8" stroke-width="1.25"/>
+<text x="210.0" y="349" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">evaluate_item(Stream.as_item)</text>
+<path d="M210.0,360 L210.0,376" fill="none" stroke="#6e7781" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="30" y="376" width="360" height="32" rx="8" fill="#f6f8fa" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="210.0" y="397" font-size="12" font-weight="700" fill="#1a7f37" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">MODEL_HANDLED → grants budget</text>
+<path d="M210.0,420 L210.0,438" fill="none" stroke="#6e7781" stroke-width="2.25" marker-end="url(#ar)"/>
+<text x="220.0" y="433" font-size="11.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">recurse into child items</text>
+<rect x="16" y="438" width="388" height="292" rx="11" fill="#eef1f4" stroke="#b6bec8" stroke-width="1.5"/>
+<text x="30" y="462" font-size="13.5" font-weight="700" fill="#1f2328" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Item-level controller</text>
+<text x="30" y="479" font-size="11.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">seven decisions, in order</text>
+<line x1="28" y1="486" x2="392" y2="486" stroke="#d0d7de" stroke-width="0.75"/>
+<circle cx="42" cy="504" r="9" fill="#0969da"/>
+<text x="42" y="507.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">1</text>
+<text x="60" y="508" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">worth_acting</text>
+<text x="390" y="508" font-size="11" font-weight="400" fill="#57606a" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">worth acting on at all?</text>
+<circle cx="42" cy="538" r="9" fill="#0969da"/>
+<text x="42" y="541.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">2</text>
+<text x="60" y="542" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">decide_spend</text>
+<text x="390" y="542" font-size="11" font-weight="400" fill="#57606a" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">how much model + effort?</text>
+<circle cx="42" cy="572" r="9" fill="#0969da"/>
+<text x="42" y="575.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">3</text>
+<text x="60" y="576" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">has_converged</text>
+<text x="390" y="576" font-size="11" font-weight="400" fill="#57606a" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">has the work converged?</text>
+<circle cx="42" cy="606" r="9" fill="#0969da"/>
+<text x="42" y="609.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">4</text>
+<text x="60" y="610" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">route_judgment</text>
+<text x="390" y="610" font-size="11" font-weight="400" fill="#57606a" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">model decides, or a human?</text>
+<circle cx="42" cy="640" r="9" fill="#0969da"/>
+<text x="42" y="643.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">5</text>
+<text x="60" y="644" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">validate_and_ask</text>
+<text x="390" y="644" font-size="11" font-weight="400" fill="#57606a" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">is the ask well-formed?</text>
+<circle cx="42" cy="674" r="9" fill="#0969da"/>
+<text x="42" y="677.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">6</text>
+<text x="60" y="678" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">check_oob_resolution</text>
+<text x="390" y="678" font-size="11" font-weight="400" fill="#57606a" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">already resolved elsewhere?</text>
+<circle cx="42" cy="708" r="9" fill="#0969da"/>
+<text x="42" y="711.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">7</text>
+<text x="60" y="712" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">aggregate_budget</text>
+<text x="390" y="712" font-size="11" font-weight="400" fill="#57606a" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">does it fit the budget?</text>
+<path d="M210.0,730 L210.0,750" fill="none" stroke="#6e7781" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<rect x="16" y="750" width="388" height="285" rx="11" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="30" y="774" font-size="13.5" font-weight="700" fill="#1f2328" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Five seams</text>
+<text x="30" y="791" font-size="11.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">interfaces the controller reads from</text>
+<line x1="28" y1="798" x2="392" y2="798" stroke="#d0d7de" stroke-width="0.75"/>
+<circle cx="40" cy="808" r="3.5" fill="#0969da"/>
+<text x="52" y="812" font-size="12.5" font-weight="700" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">PolicyPack</text>
+<text x="390" y="812" font-size="11" font-weight="400" fill="#0969da" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">feeds every decision</text>
+<text x="52" y="827" font-size="11" font-weight="400" fill="#57606a" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">one policy source · every decision</text>
+<circle cx="40" cy="850" r="3.5" fill="#0969da"/>
+<text x="52" y="854" font-size="12.5" font-weight="700" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">Router</text>
+<text x="390" y="854" font-size="11" font-weight="400" fill="#0969da" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">feeds ② decide_spend</text>
+<text x="52" y="869" font-size="11" font-weight="400" fill="#57606a" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">recommend(item) → model, effort</text>
+<circle cx="40" cy="892" r="3.5" fill="#0969da"/>
+<text x="52" y="896" font-size="12.5" font-weight="700" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">EscalationTransport</text>
+<text x="390" y="896" font-size="11" font-weight="400" fill="#0969da" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">feeds ⑤ validate_and_ask</text>
+<text x="52" y="911" font-size="11" font-weight="400" fill="#57606a" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">deliver(ask)</text>
+<circle cx="40" cy="934" r="3.5" fill="#0969da"/>
+<text x="52" y="938" font-size="12.5" font-weight="700" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">OOBSource</text>
+<text x="390" y="938" font-size="11" font-weight="400" fill="#0969da" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">feeds ⑥ check_oob_resolution</text>
+<text x="52" y="953" font-size="11" font-weight="400" fill="#57606a" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">can_observe_oob()</text>
+<circle cx="40" cy="976" r="3.5" fill="#0969da"/>
+<text x="52" y="980" font-size="12.5" font-weight="700" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">Store</text>
+<text x="390" y="980" font-size="11" font-weight="400" fill="#0969da" text-anchor="end" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">feeds ⑦ aggregate_budget</text>
+<text x="52" y="995" font-size="11" font-weight="400" fill="#57606a" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">counters + exclusion lattice</text>
+<line x1="28" y1="1005" x2="392" y2="1005" stroke="#d0d7de" stroke-width="0.75"/>
+<text x="30" y="1022" font-size="11.5" font-weight="600" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Budget scope — accounts step-7 interrupts</text>
+</svg>
