@@ -1,7 +1,7 @@
 <svg viewBox="0 0 1000 636" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
 <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="6.5" refY="3.4" orient="auto"><path d="M0,0 L7,3.4 L0,6.8 Z" fill="#6e7781"/></marker></defs>
 <text x="40" y="40" font-size="21" font-weight="700" fill="#1f2328" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">How the Buddhi controller works</text>
-<text x="40" y="64" font-size="13" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">One controller runs the seven decisions over an item, then applies to itself one level up — a stream viewed as an item.</text>
+<text x="40" y="64" font-size="13" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">One controller runs the seven decisions over an item, then applies to itself one level up: a stream viewed as an item.</text>
 <rect x="44" y="92" width="104" height="30" rx="15" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
 <text x="96.0" y="112" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Raw input</text>
 <path d="M148,107 L166,107" fill="none" stroke="#6e7781" stroke-width="2" marker-end="url(#ar)"/>
@@ -26,31 +26,31 @@
 <circle cx="102" cy="348" r="9" fill="#0969da"/>
 <text x="102" y="351.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">1</text>
 <text x="120" y="352" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">worth_acting</text>
-<text x="308" y="352" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">worth acting on at all?</text>
+<text x="308" y="352" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">worth any attention?</text>
 <circle cx="102" cy="384" r="9" fill="#0969da"/>
 <text x="102" y="387.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">2</text>
 <text x="120" y="388" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">decide_spend</text>
-<text x="308" y="388" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">how much model + effort?</text>
+<text x="308" y="388" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">how much effort?</text>
 <circle cx="102" cy="420" r="9" fill="#0969da"/>
 <text x="102" y="423.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">3</text>
 <text x="120" y="424" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">has_converged</text>
-<text x="308" y="424" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">has the work converged?</text>
+<text x="308" y="424" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">has it converged?</text>
 <circle cx="102" cy="456" r="9" fill="#0969da"/>
 <text x="102" y="459.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">4</text>
 <text x="120" y="460" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">route_judgment</text>
-<text x="308" y="460" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">model decides, or a human?</text>
+<text x="308" y="460" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">model, or a human?</text>
 <circle cx="102" cy="492" r="9" fill="#0969da"/>
 <text x="102" y="495.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">5</text>
 <text x="120" y="496" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">validate_and_ask</text>
-<text x="308" y="496" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">is the ask well-formed?</text>
+<text x="308" y="496" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">is the ask answerable?</text>
 <circle cx="102" cy="528" r="9" fill="#0969da"/>
 <text x="102" y="531.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">6</text>
 <text x="120" y="532" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">check_oob_resolution</text>
-<text x="308" y="532" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">already resolved elsewhere?</text>
+<text x="308" y="532" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">resolved elsewhere?</text>
 <circle cx="102" cy="564" r="9" fill="#0969da"/>
 <text x="102" y="567.5" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">7</text>
 <text x="120" y="568" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">aggregate_budget</text>
-<text x="308" y="568" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">does it fit the budget?</text>
+<text x="308" y="568" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">fits the budget?</text>
 <rect x="604" y="300" width="372" height="308" rx="11" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
 <text x="620" y="323" font-size="13.5" font-weight="700" fill="#1f2328" text-anchor="start" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Five seams — interfaces the controller reads from</text>
 <line x1="618" y1="334" x2="962" y2="334" stroke="#d0d7de" stroke-width="0.75"/>
