@@ -13,6 +13,11 @@
         {
           "type": "generic",
           "path": "buddhi/__init__.py"
+        },
+        {
+          "type": "generic",
+          "path": "CITATION.cff",
+          "patterns": ["version: \"{{version}}\""]
         }
       ]
     }
