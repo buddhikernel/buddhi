@@ -1,7 +1,8 @@
 # Implement the seams for a new domain
 
-To run the kernel on your own domain you fill five seam interfaces and supply a
-policy pack. No concrete seam ships in the kernel; the runnable fills live in
+To run the kernel on your own domain you fill its five seams: a policy pack,
+plus the four object seams (Router, Store, EscalationTransport, OOBSource). No
+concrete seam ships in the kernel; the runnable fills live in
 `buddhi/reference/naive_pack.py`, and that is the worked reference to copy. Each
 fill is a small object with one or two methods; the kernel orchestrates them.
 
