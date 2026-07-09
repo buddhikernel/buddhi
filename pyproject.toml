@@ -12,7 +12,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "buddhikernel"
-version = "0.1.0"
+# Single-sourced from ``buddhi.__version__`` (see [tool.setuptools.dynamic] below) so the
+# packaged version and the runtime ``buddhi.__version__`` can never drift.
+dynamic = ["version"]
 description = "A composable controller for allocating a bounded cognitive budget across a stream of work."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -44,6 +46,9 @@ test = ["pytest>=7"]
 Homepage = "https://github.com/buddhikernel/buddhi"
 Repository = "https://github.com/buddhikernel/buddhi"
 Documentation = "https://github.com/buddhikernel/buddhi/tree/main/docs"
+
+[tool.setuptools.dynamic]
+version = { attr = "buddhi.__version__" }
 
 [tool.setuptools.packages.find]
 include = ["buddhi*"]
