@@ -15,9 +15,9 @@
           "path": "buddhi/__init__.py"
         },
         {
-          "type": "generic",
+          "type": "yaml",
           "path": "CITATION.cff",
-          "patterns": ["version: \"{{version}}\""]
+          "jsonpath": "$.version"
         }
       ]
     }
