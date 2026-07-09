@@ -62,9 +62,10 @@ The decisions run in order; each narrows what reaches the next.
    human is necessary but not sufficient: a poorly-formed interruption is still an
    interruption that wastes the scarcest resource.
 
-6. **`check_oob_resolution` / `oob_resolution`**: was this already resolved out of
-   band? The third guard against **over-asking**. If the question was answered through
-   another channel, the loop continues without redoing the work or interrupting again.
+6. **`check_oob_resolution` / `oob_resolution`**: has an adapter-supplied resolver already
+   marked the item resolved? The third guard against **over-asking**. If the resolver reports
+   success, evaluation ends with `RESOLVED_OOB`; otherwise the item proceeds to escalation
+   admission.
 
 7. **`aggregate_budget`**: admit or deny the escalation against the scope's graduated
    admission bar and the two-tier source-exclusion lattice. This is the stream-level

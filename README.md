@@ -9,12 +9,12 @@
 **Buddhi is the discriminative layer for autonomous agents: it decides when to act, how much
 effort a task deserves, when to stop, and when a human should decide.**
 
-Buddhi sits above the runtime that calls models and runs tools. It is small and
-runtime-neutral, and it rations a bounded *cognitive budget* (a finite ration of model effort
-and human interruptions) across a stream of work.
+Buddhi sits above the runtime that calls models and runs tools. It is a small,
+runtime-neutral kernel that allocates a bounded *cognitive budget* of model effort and
+human interruptions across a stream of work.
 
-It does not execute the work or schedule it. It decides how much attention each item deserves,
-and whether the model or a person should make the call.
+It neither executes nor schedules the work. It decides how much attention each item
+deserves, and whether the model or a person should make the judgment.
 
 ## Why Buddhi
 
@@ -29,14 +29,14 @@ What it usually lacks is a principled way to decide, before and during that work
 
 Left unmanaged, a supervisor over a stream of agent work fails in three common ways:
 
-- **Over-acting:** spending effort where it should not — on an item that should have been
-  escalated, or one that should have been discarded.
+- **Over-acting:** acting autonomously when human judgment was required, or spending effort
+  on an item that should have been discarded.
 - **Over-asking:** interrupting a human where the system could have decided for itself.
 - **Over-iterating:** continuing after further work has stopped producing value.
 
-Buddhi is the layer that holds all three in check under a single budget. It treats cognition
-(machine effort and human attention alike) as the scarce resource, and decides, per item,
-where that resource is spent or withheld.
+Buddhi is the layer that holds all three in check within one budgeting framework. It treats
+cognition (machine effort and human attention alike) as the scarce resource, and decides,
+per item, where that resource is spent or withheld.
 
 ## A concrete example: Buddhi Review
 
@@ -53,9 +53,9 @@ The division of labour is the point:
 - the adapter does not reimplement the kernel's decision logic; it carries out the disposition.
 
 PR review is one adapter of the kernel, not the definition of Buddhi. The same interface is
-intended for other streams of agent work — an issue tracker's comments, a task queue, an
-agent's inbox — wherever something must decide how much cognition each item deserves and when
-a human should step in.
+intended for other streams of agent work: an issue tracker's comments, a task queue, an
+agent's inbox. It applies wherever something must decide how much cognition each item
+deserves and when a human should step in.
 
 ## Try it
 
@@ -66,8 +66,8 @@ python -m pip install buddhikernel
 python -m buddhi
 ```
 
-The demo runs the reference implementation through the item-level and nested-stream decisions
-on inputs that exercise every branch. A successful run prints `SMOKE PATH OK` and exits 0.
+The demo runs the reference implementation through the principal item-level and nested-stream
+decision paths. A successful run prints `SMOKE PATH OK` and exits 0.
 
 <details>
 <summary>What the demo covers</summary>
@@ -107,10 +107,11 @@ order, stopping at the first one that settles the item:
 5. **Is the proposed escalation specific and answerable?** A malformed ask is rejected; a valid
    one is pre-reasoned into a short list of options (two to four) with one marked as
    recommended.
-6. **Has the matter already been resolved elsewhere?** If another channel already answered, the
-   item is closed as resolved, with no interruption.
-7. **Does the escalation clear the remaining budget?** As interruptions accumulate the bar
-   rises, so marginal asks are denied while genuinely high-stakes ones still get through.
+6. **Has the item already been resolved externally?** An adapter-supplied check may return
+   `RESOLVED_OOB`; if it does, evaluation ends without delivering the escalation.
+7. **Does the escalation clear the current admission bar?** As interruptions accumulate, the
+   required confidence rises, so marginal asks are denied while high-confidence and genuinely
+   high-stakes asks can still get through.
 
 <picture>
   <source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="docs/assets/controller-flow.mobile.dark.svg">
@@ -171,8 +172,8 @@ reduction are in [docs/budget.md](docs/budget.md).
 
 The kernel is orchestration and depends on five interfaces, the **seams**; it ships no
 production implementation of any of them. Domain adapters provide the real implementations. The
-repository includes minimal *reference* implementations (the naive pack) so the demo and tests
-run end to end. They are the simplest correct behaviour, not production policy.
+repository includes *reference* implementations (the naive pack) that run the demo and tests
+end to end; they provide only minimal behaviour, not production policy.
 
 | Seam | Interface | Feeds |
 |---|---|---|
@@ -202,14 +203,14 @@ and lets the kernel make every decision. The contract in `buddhi.adapter` has fo
 | `escalate_async(ask)` | deliver the pre-reasoned ask through the EscalationTransport seam |
 | `detect_resolved(item)` | report whether the item was resolved out of band |
 
-To run the kernel on a new domain you implement the five seams and supply a PolicyPack. The
-worked reference is `buddhi/reference/naive_pack.py` (`NaiveAdapter`), and the step-by-step is
-in [docs/extending.md](docs/extending.md).
+To run the kernel on a new domain, supply a PolicyPack and implementations of Router, Store,
+EscalationTransport, and OOBSource. The worked reference is `buddhi/reference/naive_pack.py`
+(`NaiveAdapter`), and the step-by-step is in [docs/extending.md](docs/extending.md).
 
 ## Status and scope
 
-Buddhi is **alpha** (`0.1.0`); the API may change before `1.0`. The honest split of what is
-demonstrated versus asserted is in [docs/claim-and-bound.md](docs/claim-and-bound.md).
+Buddhi is **alpha**; the API may change before `1.0`. The honest split of what is demonstrated
+versus asserted is in [docs/claim-and-bound.md](docs/claim-and-bound.md).
 
 - **Demonstrated and runnable today.** The closure reuse (the supervisor runs the identical
   controller once per child), the budget invariants (effort ceiling, monotone admission bar,
@@ -233,9 +234,9 @@ generates, associates, and reacts. Buddhi is the faculty above it, the one that 
 what is worth acting on, how much thought a thing deserves, when a matter is resolved, and when
 to hand it to a human.
 
-The design follows Herbert Simon's bounded rationality: cognition is a scarce resource an agent
-allocates for marginal value, rather than an optimum it cannot afford to compute. Buddhi makes
-that allocation explicit and runnable.
+The design also follows Herbert Simon's bounded rationality: cognition is scarce, so an agent
+must allocate it according to marginal value rather than attempt exhaustive optimization.
+Buddhi makes that allocation explicit and runnable.
 
 ## Documentation
 

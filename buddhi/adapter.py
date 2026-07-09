@@ -84,8 +84,7 @@ class Adapter(Protocol):
         control-plane-shaped: 2-4 pre-reasoned ``Option``s with a starred
         recommendation + a warranted-escalation ``confidence`` (a decidable
         question, not an allow/deny gate). The rich options ride the channel
-        message body, decoupled from any native approval primitive, so a durable
-        wait can outlive a short-lived native gate.
+        message body, decoupled from any native approval primitive.
         """
         ...
 
