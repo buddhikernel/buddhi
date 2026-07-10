@@ -27,33 +27,31 @@ only routes.
 
 ## The name and the vision
 
-The name is deliberate. In the Samkhya and Vedanta strands of faculty psychology, buddhi is the
-discriminating intellect, the faculty that judges and decides, as distinct from manas, the
-deliberating faculty that takes in what the senses report and forms and weighs possibilities. The
-characteristic act of Manas is synthesis, proposing options, and then doubting among them, while
-that of Buddhi is determination or ascertainment.
+The name is deliberate. In Samkhya and Vedanta accounts of the mind, *manas* is associated with
+deliberation: coordinating inputs and entertaining alternatives. *Buddhi* is the discriminating
+intellect associated with determination or ascertainment. *Manas* proposes; *buddhi* decides.
 
-A generative model is manas-like: it generates, associates, and reacts. Buddhi is the faculty
-placed above it, the one that discriminates what is worth acting on, how much thought a thing
-deserves, when a matter is resolved, and when to hand it to a human. This is not the brain; it is
-the intellect that governs the brain's effort.
+A generative model is *manas*-like: it generates candidate interpretations and actions. Buddhi is
+not a further model and produces no additional candidate; it is the determinative layer above the
+model, discriminating among the courses the model proposes and deciding what merits action, how
+much further effort to allocate, when the matter is settled, and when human judgment is required.
+That is the technically meaningful correspondence: the model generates possibilities, and Buddhi
+determines what to do with them.
 
-The layering is the metaphor. The body is the agent's tools, the hands that act on the world; the
-mind is the generative model that produces candidate thoughts and actions; metacognition is
-Buddhi, the discriminative executive that sits above the models and inside the agent control
-plane, spending a scarce budget of cognition rather than producing more of it.
+In architectural terms, tools execute, the model generates candidate actions, and Buddhi occupies
+the control plane that governs judgment. It allocates a scarce budget of cognition rather than
+generating additional candidates.
 
-The ambition is modest but real. As agentic systems multiply, both machine cognition and human
-attention become scarce, and a principled layer that rations both is a missing primitive. Buddhi
-is a deliberately minimal first instantiation of that layer, grounded in Herbert Simon's bounded
-rationality and in online resource allocation. Its cross-substrate generality is structurally
-invited by the design and, for now, empirically open, a claim kept honest in
-[`./claim-and-bound.md`](./claim-and-bound.md).
+The implementation is deliberately minimal; the ambition is broader. As agentic systems multiply,
+both machine cognition and human attention become scarce, and a principled layer that allocates
+both is a missing primitive. Buddhi is a first instantiation of that layer. The design is intended
+to generalize across substrates, but that generality remains empirically open. The boundary is
+documented in [`./claim-and-bound.md`](./claim-and-bound.md).
 
 ## The operator-and-budget composition
 
-Everything above runs on a single item. The composition is what makes that interesting at
-scale, and it has two halves.
+The controller described so far operates on a single item. Its composition is what makes the
+design interesting at scale, and it has two halves.
 
 ### The operator is scale-invariant
 

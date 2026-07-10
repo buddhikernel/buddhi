@@ -227,19 +227,19 @@ versus asserted is in [docs/claim-and-bound.md](docs/claim-and-bound.md).
 
 ## The name
 
-The Samkhya and Vedanta strands of faculty psychology separate two functions of the mind. Manas
-is the deliberating faculty: it takes in what the senses report and forms and weighs
-possibilities. Buddhi is the faculty that settles the matter; its defining act is determination
-or ascertainment. Manas proposes; buddhi decides.
+Samkhya and Vedanta distinguish two functions of the mind. *Manas* is the deliberating faculty: it
+takes in what the senses report and forms and considers possibilities. *Buddhi* is the faculty
+that settles the matter; its defining act is determination or ascertainment. *Manas* proposes;
+*buddhi* decides.
 
-A generative model is manas-like: it generates, associates, and reacts. Buddhi is the faculty
-above it, the one that discriminates what is worth acting on, how much thought a thing deserves,
-when a matter is resolved, and when to hand it to a human.
+A generative model is *manas*-like: it generates candidate interpretations and actions. Buddhi
+supplies the determinative layer, deciding what merits action, how much further effort to allocate,
+when the matter is settled, and when human judgment is required.
 
-The design also follows Herbert Simon's bounded rationality: cognition is scarce, so an agent
-must allocate it according to marginal value rather than attempt exhaustive optimization. Buddhi
-makes that allocation explicit and runnable. You can read more in
-"[The name and the vision](docs/concept.md#the-name-and-the-vision)".
+The design also follows Herbert Simon's bounded rationality: cognition is scarce, so an agent must
+allocate it according to marginal value rather than attempt exhaustive optimization. Buddhi makes
+that allocation explicit and runnable. Read more in
+[The name and the vision](docs/concept.md#the-name-and-the-vision).
 
 ## Documentation
 
