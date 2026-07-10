@@ -227,16 +227,19 @@ versus asserted is in [docs/claim-and-bound.md](docs/claim-and-bound.md).
 
 ## The name
 
-In the Samkhya and Vedanta strands of faculty psychology, *buddhi* is the discriminating
-intellect: the faculty that judges and decides, as distinct from *manas*, the lower mind that
-receives input and produces impulses and reactions. A generative model is manas-like: it
-generates, associates, and reacts. Buddhi is the faculty above it, the one that discriminates
-what is worth acting on, how much thought a thing deserves, when a matter is resolved, and when
-to hand it to a human.
+The Samkhya and Vedanta strands of faculty psychology separate two functions of the mind. Manas
+is the deliberating faculty: it takes in what the senses report and forms and weighs
+possibilities. Buddhi is the faculty that settles the matter; its defining act is determination
+or ascertainment. Manas proposes; buddhi decides.
+
+A generative model is manas-like: it generates, associates, and reacts. Buddhi is the faculty
+above it, the one that discriminates what is worth acting on, how much thought a thing deserves,
+when a matter is resolved, and when to hand it to a human.
 
 The design also follows Herbert Simon's bounded rationality: cognition is scarce, so an agent
-must allocate it according to marginal value rather than attempt exhaustive optimization.
-Buddhi makes that allocation explicit and runnable.
+must allocate it according to marginal value rather than attempt exhaustive optimization. Buddhi
+makes that allocation explicit and runnable. You can read more in
+"[The name and the vision](docs/concept.md#the-name-and-the-vision)".
 
 ## Documentation
 

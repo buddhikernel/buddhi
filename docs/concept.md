@@ -27,17 +27,20 @@ only routes.
 
 ## The name and the vision
 
-The name is deliberate. In the Samkhya and Vedanta strands of faculty psychology, *buddhi* is
-the discriminating intellect, the faculty that judges and decides, as distinct from *manas*,
-the lower mind that takes in input and throws up impulses and reactions. A generative model is
-manas-like: it generates, associates, and reacts. Buddhi is the faculty placed above it, the one
-that discriminates what is worth acting on, how much thought a thing deserves, when a matter is
-resolved, and when to hand it to a human. This is not the brain; it is the intellect that governs
-the brain's effort.
+The name is deliberate. In the Samkhya and Vedanta strands of faculty psychology, buddhi is the
+discriminating intellect, the faculty that judges and decides, as distinct from manas, the
+deliberating faculty that takes in what the senses report and forms and weighs possibilities. The
+characteristic act of Manas is synthesis, proposing options, and then doubting among them, while
+that of Buddhi is determination or ascertainment.
 
-The layering is the metaphor. The *body* is the agent's tools, the hands that act on the world;
-the *mind* is the generative model that produces candidate thoughts and actions; *metacognition*
-is Buddhi, the discriminative executive that sits above the models and inside the agent control
+A generative model is manas-like: it generates, associates, and reacts. Buddhi is the faculty
+placed above it, the one that discriminates what is worth acting on, how much thought a thing
+deserves, when a matter is resolved, and when to hand it to a human. This is not the brain; it is
+the intellect that governs the brain's effort.
+
+The layering is the metaphor. The body is the agent's tools, the hands that act on the world; the
+mind is the generative model that produces candidate thoughts and actions; metacognition is
+Buddhi, the discriminative executive that sits above the models and inside the agent control
 plane, spending a scarce budget of cognition rather than producing more of it.
 
 The ambition is modest but real. As agentic systems multiply, both machine cognition and human
