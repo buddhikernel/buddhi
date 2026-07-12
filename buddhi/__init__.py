@@ -26,7 +26,7 @@ from __future__ import annotations
 # via setuptools' ``dynamic = ["version"]`` (``attr = buddhi.__version__``). It MUST stay a
 # plain top-level string literal so setuptools can extract it statically (no import-time side
 # effects). The trailing ``# x-release-please-version`` marker lets release-please rewrite it.
-__version__ = "0.1.0"  # x-release-please-version
+__version__ = "0.1.1"  # x-release-please-version
 
 from buddhi.adapter import Adapter, Budget, DecisionItem, PolicyResult
 from buddhi.policy import PolicyPack
