@@ -66,9 +66,8 @@ this work stream" — same function, one level up. When the parent admits a chil
 This is allocation-recursion only. The kernel does budget *accounting* across children; it does
 no inter-stream coordination, conflict avoidance, work partitioning, or locking. Those belong to
 a separate coordination layer, deliberately outside the kernel. The scale-invariance is
-demonstrated and runnable (the
-supervisor literally reuses the controller once per child), and you can watch it happen by
-running the demo described in [`./closure.md`](./closure.md).
+demonstrated and runnable: the supervisor literally reuses the controller once per child,
+and you can watch it happen by running the demo described in [`./closure.md`](./closure.md).
 
 ### The cognitive budget is scale-invariant
 

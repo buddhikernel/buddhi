@@ -70,8 +70,8 @@ The decisions run in order; each narrows what reaches the next.
 7. **`aggregate_budget`**: admit or deny the escalation against the scope's graduated
    admission bar and the two-tier source-exclusion lattice. This is the stream-level
    guard against **over-asking**: as interrupts accumulate, the required confidence
-   rises, so marginal items quietly self-resolve while genuinely high-stakes items
-   still escalate even from a saturated budget. The lattice is checked first, before
+   rises, so marginal escalations are denied while genuinely high-stakes ones can still
+   be admitted even from a saturated budget. The lattice is checked first, before
    the bar; an excluded source is denied unconditionally. The budget mathematics, the
    soft-bar non-guarantee, and the reduction to a single shared pool are in
    [`./budget.md`](./budget.md).
@@ -136,10 +136,10 @@ kernel stays runtime-neutral and pure.
 
 - **OOBSource**: `can_observe_oob() -> bool`. Whether a substrate can ever observe an
   out-of-band resolution is a property of the substrate, not the policy, so the kernel
-  asks the substrate to declare it. The kernel then never blocks on a channel the
-  substrate has said it cannot observe. Its naive declares it cannot observe, so the
-  out-of-band check stays pending, the simplest correct behavior for a substrate that
-  makes no such promise.
+  asks the substrate to declare it. If the substrate declares that it cannot observe
+  out-of-band resolution, the check returns `PENDING` without consulting a resolver.
+  The reference implementation declares that it cannot observe, so its OOB check always
+  remains pending.
 
 Every seam ships the simplest correct fill in the reference pack and nothing more.
 The reference pack is enough to run end-to-end, not a production method; implementing
