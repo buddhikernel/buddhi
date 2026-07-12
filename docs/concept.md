@@ -27,30 +27,35 @@ only routes.
 
 ## The name and the vision
 
-The name is deliberate. In the Samkhya and Vedanta strands of faculty psychology, *buddhi* is
-the discriminating intellect, the faculty that judges and decides, as distinct from *manas*,
-the lower mind that takes in input and throws up impulses and reactions. A generative model is
-manas-like: it generates, associates, and reacts. Buddhi is the faculty placed above it, the one
-that discriminates what is worth acting on, how much thought a thing deserves, when a matter is
-resolved, and when to hand it to a human. This is not the brain; it is the intellect that governs
-the brain's effort.
+The name is deliberate. In the Samkhya and Vedanta traditions of faculty psychology, the mind
+is analyzed into distinct faculties. *Manas* is the faculty of deliberation: it coordinates
+what the senses report and proposes alternatives. *Buddhi* is the discriminating faculty whose
+defining act is determination or ascertainment. The Katha Upanishad fixes their relation in one
+image: the self rides in the chariot of the body, drawn by the horses of the senses, with
+*buddhi* as the charioteer and *manas* as the reins. The reins channel the horses; the
+charioteer chooses the road. *Manas* proposes; *buddhi* decides.
 
-The layering is the metaphor. The *body* is the agent's tools, the hands that act on the world;
-the *mind* is the generative model that produces candidate thoughts and actions; *metacognition*
-is Buddhi, the discriminative executive that sits above the models and inside the agent control
-plane, spending a scarce budget of cognition rather than producing more of it.
+A generative model is *manas*-like: it generates candidate interpretations and actions. Buddhi is
+not a further model and produces no additional candidate; it is the determinative layer above the
+model, discriminating among the courses the model proposes and deciding what merits action, how
+much further effort to allocate, when the matter is settled, and when human judgment is required.
+That is the technically meaningful correspondence: the model generates possibilities, and Buddhi
+determines what to do with them.
 
-The ambition is modest but real. As agentic systems multiply, both machine cognition and human
-attention become scarce, and a principled layer that rations both is a missing primitive. Buddhi
-is a deliberately minimal first instantiation of that layer, grounded in Herbert Simon's bounded
-rationality and in online resource allocation. Its cross-substrate generality is structurally
-invited by the design and, for now, empirically open, a claim kept honest in
-[`./claim-and-bound.md`](./claim-and-bound.md).
+In architectural terms, tools execute, the model generates candidate actions, and Buddhi occupies
+the control plane that governs judgment. It allocates a scarce budget of cognition rather than
+generating additional candidates.
+
+The implementation is deliberately minimal; the ambition is broader. As agentic systems multiply,
+both machine cognition and human attention become scarce, and a principled layer that allocates
+both is a missing primitive. Buddhi is a first instantiation of that layer. The design is intended
+to generalize across substrates, but that generality remains empirically open. The boundary is
+documented in [`./claim-and-bound.md`](./claim-and-bound.md).
 
 ## The operator-and-budget composition
 
-Everything above runs on a single item. The composition is what makes that interesting at
-scale, and it has two halves.
+The controller described so far operates on a single item. Its composition is what makes the
+design interesting at scale, and it has two halves.
 
 ### The operator is scale-invariant
 
@@ -65,9 +70,8 @@ this work stream" — same function, one level up. When the parent admits a chil
 This is allocation-recursion only. The kernel does budget *accounting* across children; it does
 no inter-stream coordination, conflict avoidance, work partitioning, or locking. Those belong to
 a separate coordination layer, deliberately outside the kernel. The scale-invariance is
-demonstrated and runnable (the
-supervisor literally reuses the controller once per child), and you can watch it happen by
-running the demo described in [`./closure.md`](./closure.md).
+demonstrated and runnable: the supervisor literally reuses the controller once per child,
+and you can watch it happen by running the demo described in [`./closure.md`](./closure.md).
 
 ### The cognitive budget is scale-invariant
 

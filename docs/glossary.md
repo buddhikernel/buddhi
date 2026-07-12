@@ -151,11 +151,11 @@ retry loop terminates within its bound.
 
 ## Out-of-band resolution
 
-Whether a judgment was already resolved outside the loop before the controller
-escalates it (`check_oob_resolution`). The OOBSource seam declares, via
-`can_observe_oob()`, whether the substrate can ever observe such a resolution at
-all; the kernel ships the seam as an interface and its naive declares it cannot
-observe, so this step is always pending.
+A terminal outcome (`RESOLVED_OOB`) returned when an adapter-supplied check
+reports that an item was already resolved externally, before the controller
+escalates it. The OOBSource seam declares, via `can_observe_oob()`, whether the
+substrate supports such a check; the kernel does not define how the result is
+obtained, and the reference implementation always remains pending.
 
 ## Attention
 
