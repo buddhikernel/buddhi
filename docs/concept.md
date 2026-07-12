@@ -27,9 +27,13 @@ only routes.
 
 ## The name and the vision
 
-The name is deliberate. In Samkhya and Vedanta accounts of the mind, *manas* is associated with
-deliberation: coordinating inputs and entertaining alternatives. *Buddhi* is the discriminating
-intellect associated with determination or ascertainment. *Manas* proposes; *buddhi* decides.
+The name is deliberate. In the Samkhya and Vedanta traditions of faculty psychology, the mind
+is analyzed into distinct faculties. *Manas* is the faculty of deliberation: it coordinates
+what the senses report and proposes alternatives. *Buddhi* is the discriminating faculty whose
+defining act is determination or ascertainment. The Katha Upanishad fixes their relation in one
+image: the self rides in the chariot of the body, drawn by the horses of the senses, with
+*buddhi* as the charioteer and *manas* as the reins. The reins channel the horses; the
+charioteer chooses the road. *Manas* proposes; *buddhi* decides.
 
 A generative model is *manas*-like: it generates candidate interpretations and actions. Buddhi is
 not a further model and produces no additional candidate; it is the determinative layer above the

@@ -227,10 +227,10 @@ versus asserted is in [docs/claim-and-bound.md](docs/claim-and-bound.md).
 
 ## The name
 
-Samkhya and Vedanta distinguish two functions of the mind. *Manas* is the deliberating faculty: it
-takes in what the senses report and forms and considers possibilities. *Buddhi* is the faculty
-that settles the matter; its defining act is determination or ascertainment. *Manas* proposes;
-*buddhi* decides.
+In the Samkhya and Vedanta traditions of faculty psychology, the mind has two functions.
+*Manas* is the deliberating faculty: it takes in what the senses report and forms and considers
+possibilities. *Buddhi* is the faculty that settles the matter; its defining act is
+determination or ascertainment. *Manas* proposes; *buddhi* decides.
 
 A generative model is *manas*-like: it generates candidate interpretations and actions. Buddhi
 supplies the determinative layer, deciding what merits action, how much further effort to allocate,
