@@ -69,7 +69,7 @@ python -m buddhi
 The demo runs the reference implementation through the principal item-level and nested-stream
 decision paths. A successful run prints `SMOKE PATH OK` and exits 0.
 
-<details>
+<details markdown="1">
 <summary>What the demo covers</summary>
 
 Six demonstrations, in order: Stage 0 conditioning; the seven decisions over one stream; the
@@ -120,7 +120,7 @@ order, stopping at the first one that settles the item:
   <img src="docs/assets/controller-flow.svg" alt="Buddhi controller flow: Stage 0 conditions input into typed items, a supervisor grants budget to child streams, the seven decisions evaluate each item in order, and five seams supply policy and I/O." width="100%">
 </picture>
 
-<details>
+<details markdown="1">
 <summary><strong>Decision modules and dispositions</strong></summary>
 
 The controller lives in `buddhi/closure.py` as `evaluate_item()`; each decision is its own
