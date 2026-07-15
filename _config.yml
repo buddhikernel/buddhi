@@ -1,0 +1,10 @@
+# GitHub Pages (Jekyll) configuration for https://buddhikernel.github.io/buddhi/
+#
+# `title` must stay character-for-character identical to the README's top-level
+# heading. The default Pages theme (jekyll-theme-primer) prepends a linked
+# site-title header to the page whenever `site.title` differs from `page.title`,
+# and `page.title` is lifted from the README's `# Buddhi` heading by the
+# jekyll-titles-from-headings plugin. Without this line `site.title` falls back to
+# the repository name, `buddhi`, which differs from `Buddhi` only in case — enough
+# to make the theme emit a duplicate `buddhi` header above the real one.
+title: Buddhi
